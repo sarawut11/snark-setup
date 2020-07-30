@@ -20,7 +20,7 @@ zexe_algebra = { git = "https://github.com/scipr-lab/zexe", package = "algebra",
 gumdrop = { version = "0.7.0" }
 hex-literal = { version = "0.1.4" }
 memmap = { version = "0.7.0" }
-itertools = { version = "0.8.0" }
+itertools = { version = "0.9.0" }
 rand = { version = "0.7" }
 rayon = { version = "1.3.0" }
 tracing = { version = "0.1.17" }

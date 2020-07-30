@@ -249,7 +249,7 @@ dependencies = [
  "clap",
  "criterion-plot",
  "csv",
- "itertools 0.9.0",
+ "itertools",
  "lazy_static",
  "num-traits",
  "oorandom",
@@ -271,7 +271,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e022feadec601fba1649cfa83586381a4ad31c6bf3a9ab7d408118b05dd9889d"
 dependencies = [
  "cast",
- "itertools 0.9.0",
+ "itertools",
 ]
 
 [[package]]
@@ -598,15 +598,6 @@ dependencies = [
 
 [[package]]
 name = "itertools"
-version = "0.8.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f56a2d0bc861f9165be4eb3442afd3c236d8a98afd426f65d92324ae1091a484"
-dependencies = [
- "either",
-]
-
-[[package]]
-name = "itertools"
 version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "284f18f85651fe11e8a991b2adb42cb078325c996ed026d994719efcfca1d54b"
@@ -819,7 +810,7 @@ dependencies = [
  "criterion",
  "gumdrop",
  "hex-literal",
- "itertools 0.8.2",
+ "itertools",
  "memmap",
  "num-traits",
  "rand 0.7.3",
@@ -1236,7 +1227,7 @@ dependencies = [
  "blake2",
  "derivative",
  "digest 0.8.1",
- "itertools 0.9.0",
+ "itertools",
  "rand 0.7.3",
  "rand_chacha",
  "rayon",
@@ -1281,7 +1272,7 @@ dependencies = [
  "blake2",
  "derivative",
  "hex",
- "itertools 0.9.0",
+ "itertools",
  "rand 0.7.3",
  "snarkos-algorithms",
  "snarkos-curves",
@@ -1314,7 +1305,7 @@ source = "git+ssh://git@github.com/AleoHQ/snarkOS.git#d80ce42f37c8dbdd8dcb0ab957
 dependencies = [
  "derivative",
  "digest 0.8.1",
- "itertools 0.9.0",
+ "itertools",
  "snarkos-algorithms",
  "snarkos-curves",
  "snarkos-errors",
@@ -1329,7 +1320,7 @@ source = "git+ssh://git@github.com/AleoHQ/snarkOS.git#d80ce42f37c8dbdd8dcb0ab957
 dependencies = [
  "bincode",
  "derivative",
- "itertools 0.9.0",
+ "itertools",
  "rand 0.7.3",
  "rand_xorshift",
  "serde",
