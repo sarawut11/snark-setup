@@ -24,7 +24,7 @@ zexe_r1cs_core = { package = "r1cs-core", git = "https://github.com/scipr-lab/ze
 zexe_r1cs_std = { package = "r1cs-std", git = "https://github.com/scipr-lab/zexe", version = "0.1.0" }
 
 anyhow = { version = "1.0.31" }
-gumdrop = { version = "0.7.0" }
+gumdrop = { version = "0.8.0" }
 hex = { version = "0.4.2" }
 hex-literal = { version = "0.1.4" }
 memmap = { version = "0.7.0" }
