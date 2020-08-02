@@ -233,6 +233,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "console_error_panic_hook"
+version = "0.1.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b8d976903543e0c48546a91908f21588a680a8c8f984df9a5d69feccb2b2a211"
+dependencies = [
+ "cfg-if",
+ "wasm-bindgen",
+]
+
+[[package]]
 name = "cpuid-bool"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -704,6 +714,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "memory_units"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8452105ba047068f40ff7093dd1d9da90898e63dd61736462e9cdda6a90ad3c3"
+
+[[package]]
 name = "mince"
 version = "0.1.0"
 source = "git+https://github.com/scipr-lab/zexe#77eabd2191b379fc1dcd151bbbc15396e8c2bba4"
@@ -1114,6 +1130,12 @@ checksum = "93fc1dc3aaa9bfed95e02e6eadabb4baf7e3078b0bd1b4d7b6b0b68378900502"
 dependencies = [
  "winapi-util",
 ]
+
+[[package]]
+name = "scoped-tls"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ea6a9290e3c9cf0f18145ef7ffa62d68ee0bf5fcd651017e586dc7fd5da448c2"
 
 [[package]]
 name = "scopeguard"
@@ -1656,6 +1678,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "wasm-bindgen-futures"
+version = "0.4.14"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dba48d66049d2a6cc8488702e7259ab7afc9043ad0dc5448444f46f2a453b362"
+dependencies = [
+ "cfg-if",
+ "js-sys",
+ "wasm-bindgen",
+ "web-sys",
+]
+
+[[package]]
 name = "wasm-bindgen-macro"
 version = "0.2.64"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1685,6 +1719,42 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7f7b90ea6c632dd06fd765d44542e234d5e63d9bb917ecd64d79778a13bd79ae"
 
 [[package]]
+name = "wasm-bindgen-test"
+version = "0.3.14"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8edfbb0918bc0e8207c38200c9462ba8d03d8276dd99bdca14c08281af61883f"
+dependencies = [
+ "console_error_panic_hook",
+ "js-sys",
+ "scoped-tls",
+ "wasm-bindgen",
+ "wasm-bindgen-futures",
+ "wasm-bindgen-test-macro",
+]
+
+[[package]]
+name = "wasm-bindgen-test-macro"
+version = "0.3.14"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "343d02640a91e4cd89d81dba8b9047991b4bf103657c1a2d18884808c83642fc"
+dependencies = [
+ "proc-macro2 1.0.18",
+ "quote 1.0.7",
+]
+
+[[package]]
+name = "wasm-wrapper"
+version = "0.1.0"
+dependencies = [
+ "algebra",
+ "console_error_panic_hook",
+ "powersoftau",
+ "wasm-bindgen",
+ "wasm-bindgen-test",
+ "wee_alloc",
+]
+
+[[package]]
 name = "web-sys"
 version = "0.3.41"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1692,6 +1762,18 @@ checksum = "863539788676619aac1a23e2df3655e96b32b0e05eb72ca34ba045ad573c625d"
 dependencies = [
  "js-sys",
  "wasm-bindgen",
+]
+
+[[package]]
+name = "wee_alloc"
+version = "0.4.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dbb3b5a6b2bb17cb6ad44a2e68a43e8d2722c997da10e928665c72ec6c0a0b8e"
+dependencies = [
+ "cfg-if",
+ "libc",
+ "memory_units",
+ "winapi",
 ]
 
 [[package]]
