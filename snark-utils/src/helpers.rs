@@ -3,6 +3,7 @@ use crate::{
     Result,
 };
 use blake2::{digest::generic_array::GenericArray, Blake2b, Digest};
+#[cfg(feature = "default")]
 use crypto::{digest::Digest as CryptoDigest, sha2::Sha256};
 use rand::{rngs::OsRng, thread_rng, Rng, SeedableRng};
 use rand_chacha::ChaChaRng;
@@ -127,6 +128,7 @@ pub fn user_system_randomness() -> Vec<u8> {
     arr.to_vec()
 }
 
+#[cfg(feature = "default")]
 #[allow(clippy::modulo_one)]
 pub fn beacon_randomness(mut beacon_hash: [u8; 32]) -> [u8; 32] {
     // Performs 2^n hash iterations over it

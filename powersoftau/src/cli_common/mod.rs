@@ -1,10 +1,16 @@
+#[cfg(feature = "default")]
 mod new_challenge;
+#[cfg(feature = "default")]
 pub use new_challenge::new_challenge;
 
+#[cfg(feature = "default")]
 mod contribute;
+#[cfg(feature = "default")]
 pub use contribute::contribute;
 
+#[cfg(feature = "default")]
 mod transform;
+#[cfg(feature = "default")]
 pub use transform::transform;
 
 use gumdrop::Options;
