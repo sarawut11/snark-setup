@@ -1,17 +1,13 @@
-#[cfg(feature = "default")]
-mod new_challenge;
-#[cfg(feature = "default")]
-pub use new_challenge::new_challenge;
-
-#[cfg(feature = "default")]
-mod contribute;
-#[cfg(feature = "default")]
-pub use contribute::contribute;
-
-#[cfg(feature = "default")]
-mod transform;
-#[cfg(feature = "default")]
-pub use transform::transform;
+cfg_if::cfg_if! {
+    if #[cfg(feature = "default")] {
+        mod new_challenge;
+        pub use new_challenge::new_challenge;
+        mod contribute;
+        pub use contribute::contribute;
+        mod transform;
+        pub use transform::transform;
+    }
+}
 
 use gumdrop::Options;
 use std::default::Default;

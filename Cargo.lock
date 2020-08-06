@@ -832,6 +832,7 @@ dependencies = [
  "algebra",
  "algebra-core",
  "anyhow",
+ "cfg-if",
  "criterion",
  "gumdrop",
  "hex-literal",
