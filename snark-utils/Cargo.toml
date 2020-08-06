@@ -38,4 +38,4 @@ rusty-hook = { version = "0.11.2" }
 
 [features]
 default = ["rust-crypto", "zexe_algebra/parallel", "zexe_fft/parallel"]
-wasm = ["zexe_algebra/parallel", "zexe_fft/parallel"]
+wasm = []
