@@ -1750,6 +1750,7 @@ dependencies = [
  "algebra",
  "console_error_panic_hook",
  "powersoftau",
+ "rand 0.7.3",
  "serde",
  "serde_derive",
  "snark-utils",
