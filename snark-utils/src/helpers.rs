@@ -29,8 +29,6 @@ use zexe_algebra::{
     Zero,
 };
 
-#[cfg(feature = "parallel")]
-use rayon::prelude::*;
 use zexe_fft::{cfg_into_iter, cfg_iter, cfg_iter_mut};
 
 /// Generate the powers by raising the key's `tau` to all powers

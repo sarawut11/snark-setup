@@ -3,8 +3,6 @@ use crate::{buffer_size, Result, UseCompression};
 use std::io::Write;
 use zexe_algebra::AffineCurve;
 
-#[cfg(feature = "parallel")]
-use rayon::prelude::*;
 use zexe_fft::cfg_chunks_mut;
 
 /// Used for writing elements to a buffer directly

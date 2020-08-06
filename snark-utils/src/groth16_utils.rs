@@ -6,8 +6,6 @@ use tracing::{debug, info, info_span};
 use zexe_algebra::{AffineCurve, PairingEngine, PrimeField, ProjectiveCurve};
 use zexe_fft::domain::{radix2::Radix2EvaluationDomain, EvaluationDomain};
 
-#[cfg(feature = "parallel")]
-use rayon::prelude::*;
 use zexe_fft::{cfg_into_iter, cfg_iter};
 
 #[derive(Debug)]

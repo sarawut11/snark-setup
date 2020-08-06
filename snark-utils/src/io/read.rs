@@ -2,8 +2,6 @@ use crate::{buffer_size, Result, UseCompression};
 use std::io::Read;
 use zexe_algebra::AffineCurve;
 
-#[cfg(feature = "parallel")]
-use rayon::prelude::*;
 use zexe_fft::cfg_chunks;
 
 /// Used for reading 1 group element from a serialized buffer

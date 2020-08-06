@@ -1241,7 +1241,6 @@ dependencies = [
  "r1cs-core",
  "rand 0.7.3",
  "rand_chacha",
- "rayon",
  "rust-crypto",
  "rusty-hook",
  "test-helpers",

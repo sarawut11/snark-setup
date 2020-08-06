@@ -13,7 +13,7 @@ name = "accumulator"
 harness = false
 
 [dependencies]
-snark-utils = { path = "../snark-utils", default-features = false, features = ["parallel"] }
+snark-utils = { path = "../snark-utils" }
 zexe_algebra = { git = "https://github.com/scipr-lab/zexe", package = "algebra", version = "0.1.0", features = ["parallel", "bw6_761", "derive"] }
 
 gumdrop = { version = "0.7.0" }
